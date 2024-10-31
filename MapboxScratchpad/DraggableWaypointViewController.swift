@@ -22,6 +22,8 @@ struct MapboxDraggableWaypointView: UIViewControllerRepresentable {
     }
 }
 
+// MB 11.7.1 version
+// example code: https://docs.mapbox.com/ios/maps/examples/custom-point-annotation/
 final class MapViewController: UIViewController {
     private var mapView: MapView!
     private let customImage = UIImage(named: "pin")!
@@ -97,6 +99,7 @@ struct DraggableWaypointView: UIViewControllerRepresentable {
     }
 }
 
+// MB10 example using pointAnnotationManager.delegate
 class DraggableWaypointViewController: UIViewController, AnnotationInteractionDelegate {
 
     private var mapView: MapView!
