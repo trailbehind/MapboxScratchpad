@@ -11,20 +11,20 @@ import MapboxMaps
 import SwiftUI
 import Combine
 
-struct MapboxDraggableWaypointView: UIViewControllerRepresentable {
+struct MB11DraggableWaypointView: UIViewControllerRepresentable {
 
-    func makeUIViewController(context: Context) -> MapViewController {
-        return MapViewController()
+    func makeUIViewController(context: Context) -> MB11ViewController {
+        return MB11ViewController()
     }
 
-    func updateUIViewController(_ uiViewController: MapViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: MB11ViewController, context: Context) {
         
     }
 }
 
 // MB 11.7.1 version
 // example code: https://docs.mapbox.com/ios/maps/examples/custom-point-annotation/
-final class MapViewController: UIViewController {
+final class MB11ViewController: UIViewController {
     private var mapView: MapView!
     private let customImage = UIImage(named: "pin")!
     private var cancelables = Set<AnyCancellable>()
@@ -88,19 +88,19 @@ final class MapViewController: UIViewController {
 
 
 
-struct DraggableWaypointView: UIViewControllerRepresentable {
+struct MB10DraggableWaypointView: UIViewControllerRepresentable {
 
-    func makeUIViewController(context: Context) -> DraggableWaypointViewController {
-        return DraggableWaypointViewController()
+    func makeUIViewController(context: Context) -> MB10ViewController {
+        return MB10ViewController()
     }
 
-    func updateUIViewController(_ uiViewController: DraggableWaypointViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: MB10ViewController, context: Context) {
         
     }
 }
 
 // MB10 example using pointAnnotationManager.delegate
-class DraggableWaypointViewController: UIViewController, AnnotationInteractionDelegate {
+class MB10ViewController: UIViewController, AnnotationInteractionDelegate {
 
     private var mapView: MapView!
     private var pointAnnotationManager: PointAnnotationManager!

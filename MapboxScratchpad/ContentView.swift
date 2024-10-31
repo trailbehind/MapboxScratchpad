@@ -6,14 +6,13 @@
 //
 
 import SwiftUI
+import MapboxMaps
 
 struct ContentView: View {
     var body: some View {
-        DraggableWaypointView()
+        MB10DraggableWaypointView()
             .edgesIgnoringSafeArea(.all)
     }
 }
 
-#Preview {
-    ContentView()
-}
+
