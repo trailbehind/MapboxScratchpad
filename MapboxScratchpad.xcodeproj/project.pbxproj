@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EC709F232CD42852004270AC /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = EC709F222CD42852004270AC /* MapboxMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EC709EFD2CD42763004270AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		EC709F062CD42763004270AC /* MapboxScratchpadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapboxScratchpadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EC709F1A2CD427B6004270AC /* Exceptions for "MapboxScratchpad" folder in "MapboxScratchpad" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EC709EEB2CD42761004270AC /* MapboxScratchpad */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EC709EEE2CD42761004270AC /* MapboxScratchpad */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EC709F1A2CD427B6004270AC /* Exceptions for "MapboxScratchpad" folder in "MapboxScratchpad" target */,
+			);
 			path = MapboxScratchpad;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC709F232CD42852004270AC /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = MapboxScratchpad;
 			packageProductDependencies = (
+				EC709F222CD42852004270AC /* MapboxMaps */,
 			);
 			productName = MapboxScratchpad;
 			productReference = EC709EEC2CD42761004270AC /* MapboxScratchpad.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = EC709EE32CD42761004270AC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EC709F212CD42852004270AC /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EC709EED2CD42761004270AC /* Products */;
 			projectDirPath = "";
@@ -399,6 +421,7 @@
 				DEVELOPMENT_TEAM = 347326F34P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapboxScratchpad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +451,7 @@
 				DEVELOPMENT_TEAM = 347326F34P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MapboxScratchpad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC709F212CD42852004270AC /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 11.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC709F222CD42852004270AC /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC709F212CD42852004270AC /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC709EE42CD42761004270AC /* Project object */;
 }
